@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de Colombia</title>
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='bandera.jpeg') }}'); /* Reemplaza con el nombre de tu archivo */
+            background-size: cover; /* Cubre todo el fondo */
+            background-repeat: no-repeat; /* No repetir la imagen */
+            background-attachment: fixed; /* Imagen fija al hacer scroll */
+            background-position: center center; /* Centra la imagen horizontal y verticalmente */
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            color: white; /* Color del texto */
+            text-align: center; /* Centra el texto */
+            min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra el contenido verticalmente */
+            align-items: center; /* Centra el contenido horizontalmente */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 1.5em;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Viva Colombia!</h1>
+    <p>Un sitio web con la hermosa bandera colombiana de fondo.</p>
+</body>
+</html>
